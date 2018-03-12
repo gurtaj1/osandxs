@@ -25,7 +25,7 @@ $(document).ready(function(){
   
     $("#2players").click(numOfPlayers)
   
-    function numOfPlayers() {
+    function numOfPlayers(event) {
       if (event.target.id == "1player") {
         onePlayer = true;
       } else {
@@ -40,7 +40,7 @@ $(document).ready(function(){
     $("#O").click(symbolAllocation);
     $("#X").click(symbolAllocation);
   
-    function symbolAllocation() {
+    function symbolAllocation(event) {
       var otherPlayer;
       if (event.target.id == "O") {
         player1 = "O";
@@ -91,7 +91,7 @@ $(document).ready(function(){
     
     //==============================================================SQUARE CLICK================================================================================
     
-    function turnClick(square) {
+    function turnClick(event) {
       if (typeof board[event.target.id] === 'number'){
         //if the square has not been clicked yet
         if (turnCount % 2 != 0 && !onePlayer){
