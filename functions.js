@@ -56,7 +56,7 @@ $(document).ready(function(){
         player2 = otherPlayer;
       }
       $(".chooseSymbol").css("display", "none");
-      $("table").css("display", "block");
+      $(".table").css("display", "block");
     }
     //click function to decide which symbol player 1 will be, and indirectly which symbol player2/playerAI will be
     
@@ -74,7 +74,7 @@ $(document).ready(function(){
     function startGame() {
       $(".chooseSymbol").css({"display": "none"});
       $(".gameFinish").css({"display": "none"});
-      $("table").css("display", "");
+      $(".table").css("display", "");
       $("#symbolRequest").html("Choose your character..");
       //hide game finish pop up box and hide the board, also hide the symbol select screen as the restart button may have been pressed, before this screens display was changed back to none. and revert the symbol select screen text back to its original state so that it will appear normal if a one player game is selected; if a 2 player game is selected it will be altered again by the click function
       $(".numberOfPlayers").css("display", "");

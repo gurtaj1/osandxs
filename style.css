@@ -64,17 +64,17 @@ button:active {
     width: 50px;
 }
 
-table {
+.table {
     display: none;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    border-collapse: collapse;
 }
 
-td {
-    overflow: hidden; /*Note that without this property the td cells were slightly repositioning when a symbol was displayed in one, came to realise that overflow was causing this*/
+.square {
+    margin: -4px -3px;
+    overflow: hidden; /*Note that without this property the div cells were slightly repositioning when a symbol was displayed in one, came to realise that overflow was causing this*/
     font-size: 90px;
     font-weight: bold;
     font-family: Indie Flower;
@@ -88,20 +88,19 @@ td {
     cursor: pointer;
 }
 
-table tr:first-child td {
-    /*NB first tr child of table was only successfuly selected when there was no space between tr: and first-child; as above*/
+.table .tableRow:first-child .square { /*NB first .tableRow child of .table was only successfuly selected when there was no space between .tableRow: and first-child; as above*/
     border-top: 0px;
 }
 
-table tr:last-child td {
+.table .tableRow:last-child .square {
     border-bottom: 0px;
 }
 
-table tr td:first-child {
+.table .tableRow .square:first-child {
     border-left: 0px;
 }
 
-table tr td:last-child {
+.table .tableRow .square:last-child {
     border-right: 0px;
 }
 
