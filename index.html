@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Latest compiled and minified CSS (bootstrap) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+        <!-- Import CSS file -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>O's & X's</title>
+    </head>
+    <body>
+        <div class="container text-center">
+        <h1>O's & X's</h1>
+        
+            <div class="board">
+                <div class="numberOfPlayers">
+                    <h2>How many players?</h2>
+                    <button class="btn numPlayers" id="1player">1 Player</button>
+                    <button class="btn numPlayers" id="2players">2 Players</button>
+                </div>
+                
+                <div class="chooseSymbol">
+                    <h2 id="symbolRequest">Choose your character..</h2>
+                    <button class="btn symbol" id="O">O</button>
+                    <button class="btn symbol" id="X">X</button>
+                </div>
+                
+                <table>
+                    <tr>
+                        <td class="square" id="0"></td>
+                        <td class="square" id="1"></td>
+                        <td class="square" id="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="square" id="3"></td>
+                        <td class="square" id="4"></td>
+                        <td class="square" id="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="square" id="6"></td>
+                        <td class="square" id="7"></td>
+                        <td class="square" id="8"></td>
+                    </tr>
+                </table>
+                
+                <div class="gameFinish">
+                    <div class="gameFinishMessage"></div>
+                    <button class="btn" id="restartButton">Restart</button>
+                </div>
+            </div>
+        
+    
+        </div>
+    </body>
+        <!-- Latest compiled and minified jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Font Awesome CDN embeded code -->
+        <script src="https://use.fontawesome.com/24febf1a54.js"></script>
+        <!-- Latest compiled and minified JS (bootstrap) -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Import JS file -->
+        <script type="text/javascript" src="functions.js"></script>
+</html>
